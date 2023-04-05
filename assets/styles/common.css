@@ -4,6 +4,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'HarmonyOS Sans';
+    src: url('/assets/fonts/HarmonyOS_Sans_Medium.ttf');
+    font-style: medium;
+}
+
 svg {
     width: 75%;
     height: auto;
