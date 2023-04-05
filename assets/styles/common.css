@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'HarmonyOS Sans';
+    src: url('/assets/fonts/HarmonyOS_Sans_Regular.ttf');
+    font-style: normal;
+}
+
+svg {
+    width: 75%;
+    height: auto;
+}
+
+header h1 {
+    position: absolute;
+    left: 5%;
+    top: 36px;
+    height: 36px;
+
+    font-family: 'HarmonyOS Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+
+    color: #1E1E1E;
+}
+
+body {
+    background: #F1F3F5;
+}
+
+#info-card {
+    position: relative;
+    left: 1vh;
+    right: 1vh;
+    width: 100vw;
+    height: 12vh;
+    align-items: center;
+
+    bottom: 76.12%;
+    background: #FFFFFF;
+    border-radius: 12px;
+    clear: left;
+}
+
+#icon-div {
+    position: absolute;
+    left: 4vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3vh;
+    height: 3vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+}
+
+#col-text {
+    position: absolute;
+    left: calc(4vw + 3vh + 2vw);
+    top: 0%;
+    height: 2.65vh;
+    width: 100%;
+
+    font-family: 'HarmonyOS Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+
+    color: #1E1E1E;
+}
+
+#col-desc {
+    position: absolute;
+    left: calc(4vw + 3vh + 2vw);
+    top: 100%;
+
+    font-family: 'HarmonyOS Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+
+    color: #666666;
+}
+
+#desc-div {
+    position: absolute;
+    left: 0;
+    top: 27.5%;
+    transform: translateY(-50%);
+    height: 60px;
+    width: 90vw;
+}
+
+#xlcard-div {
+    position: relative;
+    width: 0;
+    height: 6vh;  
+}
+#card-div {
+    position: relative;
+    width: 0;
+    height: 3vh;
+}
+
+#top-card {
+    position: relative;
+    left: 1vh;
+    right: 1vh;
+    width: 100vw;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 4px solid;
+    border-color: #F2F2F2;
+}
+
+#mid-card {
+    position: relative;
+    left: 1vh;
+    right: 1vh;
+    width: 100vw;
+    height: 6vh;
+    background: #FFFFFF;
+    border-bottom: 4px solid;
+    border-color: #F2F2F2;
+}
+
+#bottom-card {
+    position: relative;
+    left: 1vh;
+    right: 1vh;
+    width: 100vw;
+    height: 6vh;
+    background: #FFFFFF;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#item-title {
+    position: absolute;
+    left: calc(4vw + 3vh + 2vw);
+    line-height: 1.25;
+    font-family: 'HarmonyOS Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    color: #1E1E1E;
+}
