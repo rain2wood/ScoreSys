@@ -17,7 +17,7 @@ svg {
 
 header h1 {
     position: absolute;
-    left: 5%;
+    left: calc(1vh + 4vw);
     top: 36px;
     height: 36px;
 
