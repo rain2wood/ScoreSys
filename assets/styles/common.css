@@ -29,6 +29,31 @@ header h1 {
     color: #1E1E1E;
 }
 
+header h2 {
+    position: absolute;
+    left: calc(1vh + 6vw);
+    top: -48px;
+    height: 36px;
+
+    font-family: 'HarmonyOS Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 57.6px;
+}
+
+#heading-back {
+    position: absolute;
+    left: 4vw;
+    top: 96px;
+    width: 3vh;
+    height: 3vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 body {
     background: #F1F3F5;
 }
@@ -90,6 +115,48 @@ body {
     color: #666666;
 }
 
+#col-option {
+    position: absolute;
+    right: 4vw;
+    top: 0%;
+    line-height: 1.5;
+    width: 100%;
+    text-align: right;
+
+    font-family: 'HarmonyOS Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33.6px;
+
+    color: #666666;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+
+    position: absolute;
+    right: 4vw;
+    line-height: 1.25;
+    height: 2.65vh;
+    width: 100vw;
+
+    font-family: 'HarmonyOS Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33.6px;
+    text-align: right;
+
+    color: #666666;
+}
+
 #desc-div {
     position: absolute;
     left: 0;
@@ -102,8 +169,9 @@ body {
 #xlcard-div {
     position: relative;
     width: 0;
-    height: 6vh;  
+    height: 6vh;
 }
+
 #card-div {
     position: relative;
     width: 0;
@@ -116,6 +184,7 @@ body {
     right: 1vh;
     width: 100vw;
     height: 6vh;
+    display: flex;
     align-items: center;
     justify-content: center;
     background: #FFFFFF;
@@ -130,6 +199,9 @@ body {
     left: 1vh;
     right: 1vh;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 6vh;
     background: #FFFFFF;
     border-bottom: 4px solid;
@@ -142,6 +214,9 @@ body {
     right: 1vh;
     width: 100vw;
     height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #FFFFFF;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -156,4 +231,41 @@ body {
     font-weight: 400;
     font-size: 38px;
     color: #1E1E1E;
+    display: flex;
+}
+
+#discard {
+    position: absolute;
+    border: none;
+    bottom: 96px;
+    outline: none;
+    left: calc(1vh + 6vw);
+    width: 36vw;
+    height: 9vw;
+    background-color: #EFCFCC;
+    font-family: 'HarmonyOS Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 19px;
+    color: #E84026;
+    border-radius: 48px;
+}
+
+#save {
+    position: absolute;
+    border: none;
+    outline: none;
+    bottom: 96px;
+    right: calc(1vh + 4vw);
+    width: 36vw;
+    height: 9vw;
+    background-color: #C3D4F5;
+    font-family: 'HarmonyOS Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 19px;
+    color: #0A59F7;
+    border-radius: 48px;
 }
