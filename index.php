@@ -96,14 +96,16 @@
     </div>
 
     <!-- Event Stat -->
-    <div id="bottom-card">
-        <div style="background: #E84026;" id="icon-div">
-            <svg width="3.8vh" height="3.8vh" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#E7E6FE">
-                <path d="M16 20v-8m0 0l3 3m-3-3l-3 3M4 14l8-8 3 3 5-5" stroke="#E7E6FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
+    <a href="/admin/statistics.php">
+        <div id="bottom-card">
+            <div style="background: #E84026;" id="icon-div">
+                <svg width="3.8vh" height="3.8vh" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#E7E6FE">
+                    <path d="M16 20v-8m0 0l3 3m-3-3l-3 3M4 14l8-8 3 3 5-5" stroke="#E7E6FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </div>
+            <p id="item-title">Event Statistics</p>
         </div>
-        <p id="item-title">Event Statistics</p>
-    </div>
+    </a>
 
     <div id="card-div"></div>
 
