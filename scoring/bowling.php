@@ -26,7 +26,7 @@
         session_unset();
         session_destroy();
         unset($_POST);
-        header("Location: ".$_SERVER['REQUEST_URI']);
+        header("Location: " . $_SERVER['REQUEST_URI']);
     }
 
     ?>
@@ -75,7 +75,7 @@
             </div>
             <p id="item-title">Class</p>
             <!-- Dropdown menu -->
-            <select name="target-class">
+            <select name="target-class" onchange="this.form.submit();">
                 <?php
                 $classes = array("1A", "1B", "1C", "1D", "1E", "2A", "2B", "2C", "2D", "3A", "3B", "3C", "3D", "3E", "4A", "4B", "4C", "4D", "4E", "5A", "5B", "5C", "5D", "5E");
                 foreach ($classes as $class) {
@@ -88,7 +88,9 @@
                 ?>
             </select>
         </div>
+    </form>
 
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <!-- Class Number -->
         <div id="mid-card">
             <div style="background: #61CFBE;" id="icon-div">
