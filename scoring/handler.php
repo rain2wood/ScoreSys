@@ -35,7 +35,6 @@ db_query("INSERT INTO `$event` $cols VALUES $vals");
 if (!($event == "typing")) {
     header("Location: /scoring/$event.php");
 } else {
-    echo "DEBUG: typing is select, replace url here";
-    // header("Location: /scoring/$event.php"); // TBD: replace URL
+    header("Location: https://typing-af2bb.firebaseapp.com/board.html");
 }
 ?>
