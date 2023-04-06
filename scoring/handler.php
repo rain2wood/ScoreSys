@@ -6,7 +6,7 @@ db_open();
 // define variables from $_GET
 
 $event = $_GET['event'];
-$class=$_GET['class'];
+$class = $_GET['class'];
 $classno = $_GET['classno'];
 
 $fh = $_GET['fhit'];
@@ -26,8 +26,16 @@ if ($event == "bowling") {
     $wpm = $_GET['wpm'];
     $cpm = $_GET['cpm'];
     $mistakes = $_GET['mistakes'];
+    $cols = '(`class`, `number`, `cpm`, `wpm`, `mistake`)';
+    $vals = "('$class', '$classno', '$cpm', '$wpm', '$mistakes')";
 }
 
 db_query("INSERT INTO `$event` $cols VALUES $vals");
-header("Location: /scoring/$event.php");
+
+if (!($event == "typing")) {
+    header("Location: /scoring/$event.php");
+} else {
+    echo "DEBUG: typing is select, replace url here";
+    // header("Location: /scoring/$event.php"); // TBD: replace URL
+}
 ?>
