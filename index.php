@@ -136,14 +136,16 @@
     </a>
 
     <!-- source -->
-    <div id="bottom-card">
-        <div style="background: #F7CE00;" id="icon-div">
-            <svg width="3.8vh" height="3.8vh" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#E7E6FE">
-                <path d="M13.5 6L10 18.5M6.5 8.5L3 12l3.5 3.5M17.5 8.5L21 12l-3.5 3.5" stroke="#E7E6FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
+    <a href="https://www.github.com/rain2wood/ScoreSys">
+        <div id="bottom-card">
+            <div style="background: #F7CE00;" id="icon-div">
+                <svg width="3.8vh" height="3.8vh" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#E7E6FE">
+                    <path d="M13.5 6L10 18.5M6.5 8.5L3 12l3.5 3.5M17.5 8.5L21 12l-3.5 3.5" stroke="#E7E6FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </div>
+            <p id="item-title">View Source Code</p>
         </div>
-        <p id="item-title">View Source Code</p>
-    </div>
+    </a>
 
     <!-- UX: Allow more scrolling for user -->
     <div id="card-div"></div>
