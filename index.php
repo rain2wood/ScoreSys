@@ -122,6 +122,7 @@
     </a>
 
     <!-- phpmyadmin panel -->
+    <?php echo "<a href='http://" . $_SERVER['SERVER_NAME'] . "/phpmyadmin'>"; ?>
     <div id="mid-card">
         <div style="background: #F9A01E;" id="icon-div">
             <svg width="3.8vh" height="3.8vh" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#E7E6FE">
@@ -132,6 +133,7 @@
         </div>
         <p id="item-title">phpMyAdmin</p>
     </div>
+    </a>
 
     <!-- source -->
     <div id="bottom-card">
