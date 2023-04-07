@@ -86,14 +86,16 @@
     </div>
 
     <!-- Participation Check -->
-    <div id="mid-card">
-        <div style="background: #E64566;" id="icon-div">
-            <svg width="3.8vh" height="3.8vh" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#E7E6FE">
-                <path d="M17 17l4 4M3 11a8 8 0 1016 0 8 8 0 00-16 0z" stroke="#E7E6FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
+    <a href="/admin/event-stats.php">
+        <div id="mid-card">
+            <div style="background: #E64566;" id="icon-div">
+                <svg width="3.8vh" height="3.8vh" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#E7E6FE">
+                    <path d="M17 17l4 4M3 11a8 8 0 1016 0 8 8 0 00-16 0z" stroke="#E7E6FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </div>
+            <p id="item-title">Participation Query</p>
         </div>
-        <p id="item-title">Participation Query</p>
-    </div>
+    </a>
 
     <!-- Event Stat -->
     <a href="/admin/statistics.php">
