@@ -16,6 +16,12 @@
     $fhit_nocache = 0;
     $shit_nocache = 0;
     include "common.php"; // include common library
+
+    $lock_status = get_lock_status("bowling");
+    if ($lock_status == 1){
+        header("Location: /index.php");
+    }
+
     if (isset($_POST['save'])) {
         error_log("Bowling: SAVE is set. GOODBYE!");
         header("Location: /scoring/handler.php?event=bowling&class=$tc&classno=$tn&fhit=$fh&shit=$sh");

@@ -1,4 +1,9 @@
 <?php
+function get_lock_status($event) {
+    $lock = fetch_query("SELECT locked FROM locks WHERE event='$event'", "locked");
+    error_log("get_lock_status: Lock status for $event is $lock");
+    return $lock;    
+}
 
 // define target class
 if (isset($_POST['target-class'])) {
@@ -48,5 +53,6 @@ if (isset($_POST['second-hit'])) {
     $sh = $_SESSION['second-hit'];
 }
 error_log("Commonlog: Second Hit is $sh");
+
 
 ?>
