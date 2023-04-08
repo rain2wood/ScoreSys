@@ -12,6 +12,13 @@
     font-weight: 500;
 }
 
+@font-face {
+    font-family: 'HarmonyOS Sans';
+    src: url('/assets/fonts/HarmonyOS_Sans_Light.ttf');
+    font-style: light;
+    font-weight: 300;
+}
+
 svg {
     width: 75%;
     height: auto;
