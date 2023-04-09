@@ -183,7 +183,12 @@
             <select name="second-hit" onchange="this.form.submit();">
                 <?php
                 $shits = array(); // HACK: Generate Class number 1 to 40
-                for ($i = 0; $i <= (6 - $fh); $i++) {
+                if ($fh == 6) {
+                    $sht = 0;
+                } else {
+                    $sht = $fh;
+                }
+                for ($i = 0; $i <= (6 - $sht); $i++) {
                     $shits[] = $i;
                 }
                 foreach ($shits as $shit) {
@@ -207,7 +212,11 @@
         </div>
         <p id="item-title">Total Score</p>
         <?php
-        $total_score = $fh * 2 + $sh;
+        if ($fh == 6) {
+            $total_score = ($fh + $sh * 2);
+        } else {
+            $total_score = $fh + $sh;
+        }
         echo "<p id='col-option'>$total_score</p>";
         ?>
     </div>
