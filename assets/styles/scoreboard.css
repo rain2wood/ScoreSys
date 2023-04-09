@@ -1,0 +1,158 @@
+header h1 {
+    position: relative;
+    left: 15vw;
+    top: 2.6vh;
+
+    font-family: 'HarmonyOS Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 70px;
+
+    color: #212121;
+}
+
+#bowling-container {
+    position: absolute;
+    width: 20.8vw;
+    height: 72.2vh;
+    left: 39.58333vw;
+    top: 17.7vh;
+
+    background: #E0E0E0;
+    border-radius: 8px;
+}
+
+#shooting-container {
+    position: absolute;
+    width: 20.8vw;
+    height: 72.2vh;
+    left: 7.5vw;
+    top: 17.7vh;
+
+    background: #E0E0E0;
+    border-radius: 8px;
+}
+
+#typing-container {
+    position: absolute;
+    width: 20.8vw;
+    height: 72.2vh;
+    right: 7.5vw;
+    top: 17.7vh;
+
+    background: #E0E0E0;
+    border-radius: 8px;
+}
+
+#top-card {
+    position: relative;
+    width: 18.75vw;
+    height: 17.2vh;
+    left: 1.0416vw;
+    right: 1.0416vw;
+    top: 9.25vh;
+    background: #212121;
+    border-bottom: 1px solid #616161;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#mid-card {
+    position: relative;
+    width: 18.75vw;
+    height: 8.6vh;
+    left: 1.0416vw;
+    right: 1.0416vw;
+    top: 9.25vh;
+    background: #212121;
+    border-bottom: 1px solid #616161;
+}
+
+#bottom-card {
+    position: relative;
+    width: 18.75vw;
+    height: 8.6vh;
+    left: 1.0416vw;
+    right: 1.0416vw;
+    top: 9.25vh;
+    background: #212121;
+    border-bottom: 1px solid #616161;
+    border-radius: 0px 0px 8px 8px;
+}
+
+#event-name {
+    position: absolute;
+    width: 100%;
+    height: 28px;
+    left: 1.0416vw;
+    top: 1vh;
+
+    font-family: 'HarmonyOS Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+#rank-circle {
+    position: absolute;
+    left: 1.35416vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.6vw;
+    height: 2.6vw;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #E0E0E0;
+}
+
+#rank-number {
+    font-family: 'HarmonyOS Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+    color: #212121;
+}
+
+#result-div {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 48px;
+    width: 20vw;
+}
+
+#result-class {
+    position: relative;
+    left: 4.778vw;
+    top: -12%;
+    bottom: 100%;
+    transform: translateY(-50%);
+    width: 50%;
+    font-family: 'HarmonyOS Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: #E0E0E0;
+}
+
+#result-points {
+    position: relative;
+    left: 4.778vw;
+    bottom: 87.5%;
+    width: 100%;
+    font-family: 'HarmonyOS Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #BDBDBD;
+}
