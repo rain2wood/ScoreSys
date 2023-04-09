@@ -39,6 +39,13 @@
             }
             $increment++;
         }
+
+        while ($increment <= 6) {
+            $scores[$increment] = "0";
+            $classes[$increment] = "No Players";
+            $increment++;
+        }
+
         $result->classes = $classes;
         $result->scores = $scores;
         if ($identifier != "class") {
