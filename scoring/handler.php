@@ -21,7 +21,9 @@ if ($event == "bowling") {
     $cols = '(`class`, `number`, `first`, `second`, `score`)';
     $vals = "('$class', '$classno', '$fh', '$sh', '$player_score')";
 } elseif ($event == "shooting") {
-    $operand = $_GET['operand'];
+    $score = $_GET['score'];
+    $cols = '(`class`, `number`, `score`)';
+    $vals = "('$class', '$classno', '$score')";
 } else {
     $wpm = $_GET['wpm'];
     $cpm = $_GET['cpm'];
