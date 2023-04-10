@@ -2,6 +2,7 @@
 /* File Description: Handler to INSERT INTO databse for scoring */
 include("../assets/db.php");
 db_open();
+session_start();
 
 // define variables from $_GET
 
@@ -34,6 +35,9 @@ if ($event == "bowling") {
 
 db_query("INSERT INTO `$event` $cols VALUES $vals");
 
+session_unset();
+session_destroy();
+unset($_POST);
 if (!($event == "typing")) {
     header("Location: /scoring/$event.php");
 } else {
