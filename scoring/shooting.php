@@ -2,6 +2,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="/assets/styles/common.css">
+    <script src="/scoring/common.js"></script>
     <title>ScoreSys - Shooting Scoring</title>
 </head>
 
@@ -19,7 +20,7 @@
 
     $lock_status = get_lock_status("shooting");
     if ($lock_status == 1) {
-        header("Location: /index.php");
+        echo "<script>showLock();</script>";
     }
 
     if (isset($_POST['save'])) {

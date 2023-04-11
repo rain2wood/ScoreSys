@@ -2,11 +2,11 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="/assets/styles/common.css">
+    <script src="/scoring/common.js"></script>
     <title>ScoreSys - Bowling Scoring</title>
 </head>
 
 <body>
-
     <?php
     include "../assets/db.php";
     db_open();
@@ -18,8 +18,8 @@
     include "common.php"; // include common library
 
     $lock_status = get_lock_status("bowling");
-    if ($lock_status == 1){
-        header("Location: /index.php");
+    if ($lock_status == 1) {
+        echo "<script>showLock();</script>";
     }
 
     if (isset($_POST['save'])) {
