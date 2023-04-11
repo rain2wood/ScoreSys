@@ -4,6 +4,13 @@ include("../assets/db.php");
 db_open();
 session_start();
 
+/* Bail out for typing is event is locked */
+include "common.php"; // include common library
+$lock_status = get_lock_status("typing");
+if ($lock_status == 1) {
+    header("Location: https://typing-af2bb.firebaseapp.com/board.html");
+}
+
 // define variables from $_GET
 
 $event = $_GET['event'];
