@@ -173,6 +173,24 @@
     <div id="mid-card">
         <div style="background: #E84026;" id="icon-div">
             <svg width="3.8vh" height="3.8vh" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#E7E6FE">
+                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#E7E6FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M11.5 8a.5.5 0 100-1 .5.5 0 000 1zM7.5 11a.5.5 0 100-1 .5.5 0 000 1zM11.5 13a.5.5 0 100-1 .5.5 0 000 1z" fill="#E7E6FE" stroke="#E7E6FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </div>
+        <p id="item-title">Bowling Class Rank</p>
+        <?php
+        $class_rank = fetch_query("SELECT COUNT(*) + 1 AS bowling_rank FROM class_bowling WHERE score > (SELECT MAX(score) FROM class_bowling WHERE class='$tc');", "bowling_rank");
+        $class_rows = fetch_query_count("SELECT * FROM bowling WHERE class='$tc'");
+        if ($class_rows == 0) {
+            $class_rank = "/";
+        }
+        echo "<p id='col-option'>$class_rank</p>";
+        ?>
+    </div>
+
+    <div id="mid-card">
+        <div style="background: #ED6F21;" id="icon-div">
+            <svg width="3.8vh" height="3.8vh" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#E7E6FE">
                 <path d="M8 12h9m-9 0l-2-2H2l2 2-2 2h4l2-2zm9 0l-2-2m2 2l-2 2M16 22.5c2.761 0 5-4.701 5-10.5S18.761 1.5 16 1.5 11 6.201 11 12s2.239 10.5 5 10.5z" stroke="#E7E6FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
         </div>
@@ -188,7 +206,7 @@
     </div>
 
     <div id="bottom-card">
-        <div style="background: #ED6F21;" id="icon-div">
+        <div style="background: #F9A01E;" id="icon-div">
             <svg width="3.8vh" height="3.8vh" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#E7E6FE">
                 <path d="M3 19V5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="#E7E6FE" stroke-width="1.5"></path>
                 <path d="M14 10h3M17 14h-5l-1.667-4H7" stroke="#E7E6FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
