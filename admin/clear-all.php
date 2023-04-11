@@ -18,7 +18,7 @@
         function resetDone() {
             alert("All data in DB has been reset and all events are unlocked");
         }
-        showPopup();
+        resetDone();
         window.location.href = "/index.php";
     </script>
 
