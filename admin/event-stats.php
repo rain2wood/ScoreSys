@@ -161,11 +161,10 @@
         </div>
         <p id="item-title">Bowling Rank</p>
         <?php
-        $bowling_rank = fetch_query("SELECT COUNT(*) AS bowling_rank FROM bowling WHERE score > (SELECT MAX(score) FROM bowling WHERE class='$tc' AND number='$tn');", "bowling_rank");
-        if (empty($bowling_rank)) {
-            $bowling_rank = 0;
-        } else {
-            $bowling_rank = $bowling_rank + 1;
+        $bowling_rank = fetch_query("SELECT COUNT(*) + 1 AS bowling_rank FROM bowling WHERE score > (SELECT MAX(score) FROM bowling WHERE class='$tc' AND number='$tn');", "bowling_rank");
+        $bowling_rows = fetch_query_count("SELECT * FROM bowling WHERE class='$tc' AND number='$tn'");
+        if ($bowling_rows == 0) {
+            $bowling_rank = "/";
         }
         echo "<p id='col-option'>$bowling_rank</p>";
         ?>
@@ -179,11 +178,10 @@
         </div>
         <p id="item-title">Shooting Rank</p>
         <?php
-        $shooting_rank = fetch_query("SELECT COUNT(*) AS shooting_rank FROM shooting WHERE score > (SELECT MAX(score) FROM shooting WHERE class='$tc' AND number='$tn');", "shooting_rank");
-        if (empty($shooting_rank)) {
-            $shooting_rank = 0;
-        } else {
-            $shooting_rank = $shooting_rank + 1;
+        $shooting_rank = fetch_query("SELECT COUNT(*) + 1 AS shooting_rank FROM shooting WHERE score > (SELECT MAX(score) FROM shooting WHERE class='$tc' AND number='$tn');", "shooting_rank");
+        $shooting_rows = fetch_query_count("SELECT * FROM shooting WHERE class='$tc' AND number='$tn'");
+        if ($shooting_rows == 0) {
+            $shooting_rank = "/";
         }
         echo "<p id='col-option'>$shooting_rank</p>";
         ?>
@@ -199,10 +197,9 @@
         <p id="item-title">Typing Rank</p>
         <?php
         $typing_rank = fetch_query("SELECT COUNT(*) AS typing_rank FROM typing WHERE cpm > (SELECT MAX(cpm) FROM typing WHERE class='$tc' AND number='$tn');", "typing_rank");
-        if (empty($typing_rank)) {
-            $typing_rank = 0;
-        } else {
-            $typing_rank = $typing_rank + 1;
+        $typing_rows = fetch_query_count("SELECT * FROM typing WHERE class='$tc' AND number='$tn'");
+        if ($typing_rows == 0) {
+            $typing_rank = "/";
         }
         echo "<p id='col-option'>$typing_rank</p>";
         ?>
