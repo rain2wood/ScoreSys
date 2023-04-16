@@ -21,8 +21,8 @@
             </svg>
         </div>
         <div id="desc-div">
-            <p id="col-text">ScoreSys 0.1 | 20230403</p>
-            <p id="col-desc">CSS really sucks</p>
+            <p id="col-text">ScoreSys 1.0 | 20230416</p>
+            <p id="col-desc">ICT Week Demo Release</p>
         </div>
     </div>
 
