@@ -40,6 +40,7 @@ if ($event == "bowling") {
     $vals = "('$class', '$classno', '$cpm', '$wpm', '$mistakes')";
 }
 
+db_query("UPDATE '$event' SET last='0' WHERE class='$class' AND number='$classno'");
 db_query("INSERT INTO `$event` $cols VALUES $vals");
 
 session_unset();

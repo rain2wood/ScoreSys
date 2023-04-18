@@ -17,9 +17,9 @@
     function find_top($db, $identifier)
     {
         if ($identifier == "typing") {
-            $query = db_query("SELECT * FROM $db ORDER BY cpm DESC LIMIT 6");
+            $query = db_query("SELECT * FROM $db WHERE last='1' ORDER BY cpm DESC LIMIT 6");
         } else {
-            $query = db_query("SELECT * FROM $db ORDER BY score DESC LIMIT 6");
+            $query = db_query("SELECT * FROM $db WHERE last='1' ORDER BY score DESC LIMIT 6");
         }
         $scores = array();
         $classes = array();
