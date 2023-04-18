@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/styles/common.css">
     <link rel="stylesheet" type="text/css" href="/assets/styles/scoreboard.css">
     <title>ScoreSys - Bowling Scoring</title>
+    <meta http-equiv="refresh" content="20">
 </head>
 
 
